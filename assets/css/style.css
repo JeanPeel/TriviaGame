@@ -1,0 +1,23 @@
+.auto-center {
+    margin: 0 auto;
+}
+
+.vw-wrapper {
+    width: 100vw;
+}
+
+.vw-wrapper2 {
+    width: 70vw; 
+}
+
+.vw-wrapper3 {
+    width: 45vw;
+}
+
+.vw-wrapper4 {
+    width: 25vw;
+}
+
+.separator {
+    width: 20px;
+}
