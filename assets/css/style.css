@@ -7,17 +7,39 @@
 }
 
 .vw-wrapper2 {
-    width: 70vw; 
+    width: 90vw; 
 }
 
 .vw-wrapper3 {
-    width: 45vw;
+    width: 80vw;
 }
 
 .vw-wrapper4 {
+    width: 10vw;
+}
+
+.vw-wrapper5 {
+    width: 22vw;
+}
+
+.vw-wrapper6 {
     width: 25vw;
 }
 
 .separator {
     width: 20px;
+}
+
+.quiz {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.giphy {
+    padding-top:10px;
+}
+
+.quiz2 {
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
