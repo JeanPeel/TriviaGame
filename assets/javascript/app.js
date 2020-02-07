@@ -12,7 +12,11 @@ var answer4 = "";
 var questions = (question1, question2, question3, question4);
 var answers = (answer1, answer2, answer3, answer4);
 
-var timer = ();
+var timer = $('#timer');
+var counter = 120;
+timer.text(counter);
+
+setInterval(function() {counter--; timer.text(counter);}, 1000);
 
 
 //Start Btn 
