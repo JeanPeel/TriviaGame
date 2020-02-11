@@ -12,17 +12,39 @@ var answer4 = "";
 var questions = (question1, question2, question3, question4);
 var answers = (answer1, answer2, answer3, answer4);
 
+// var wrong = document.getElementById("wrong")
+// var correct = document.getElementById("correct")
+
 var timer = $('#timer');
-var counter = 120;
+var counter = 200;
 timer.text(counter);
 
-setInterval(function() {counter--; timer.text(counter);}, 1000);
+var correct = $('#correct');
+var wins = 0;
+correct.text(wins);
 
+var wrong = $('#wrong');
+var losses = 0;
+wrong.text(losses);
+
+// () {
+//     if (timer = 0) {
+//     // trigger loose condition
+//    counter = 200;
+//    timer.text(counter);
+//    console.log('timer reset')
+// }
+// }
+
+$("#start").click(function() {
+    setInterval(function() {counter--; timer.text(counter);}, 1000);
+    console.log("start clicked") 
+});
 
 //Start Btn 
     //Imeediate, Action, Function, Method
     //Starts the Timer
-    //Displays the Questions
+    //Displays the Answers? 
 //Timer
     //Imeediate & Delayed, Variable, Method & Property, Information and Thing
     //Counts Down
@@ -40,6 +62,42 @@ setInterval(function() {counter--; timer.text(counter);}, 1000);
     // Information, Delayed, Variable, Property
 //Question 4
     // Information, Delayed, Variable, Property
+
+$("#hand-pan").click(function() {
+    wins++;
+    console.log('correct answers clicked ' + wins);
+    correct.text(wins);
+});
+
+$("#glass-armonica").click(function() {
+    wins++;
+    console.log('correct answers clicked ' + wins);
+    correct.text(wins);
+});
+
+$("#gu-zheng").click(function() {
+    wins++;
+    console.log('correct answers clicked ' + wins);
+    correct.text(wins);
+});
+
+$("#hurdy-gurdy").click(function() {
+    wins++;
+    console.log('correct answers clicked ' + wins);
+});
+
+$("#theremin").click(function() {
+    wins++;
+    console.log('correct answers clicked ' + wins);
+    correct.text(wins);
+});
+
+$("#array-mbira").click(function() {
+    wins++;
+    console.log('correct answers clicked ' + wins);
+    correct.text(wins);
+});
+
 //Answer 1
     // Information, Delayed, Variable, Property
 //Answer 2
@@ -48,6 +106,10 @@ setInterval(function() {counter--; timer.text(counter);}, 1000);
     // Information, Delayed, Variable, Property
 //Answer 4
     // Information, Delayed, Variable, Property
+
+$("#submit").click(function() {
+    console.log('submit clicked');
+});
 //Submit
     //Action, Imeediate, function, method
     //Compares answers to correct answers with If/ Else Statements
@@ -57,6 +119,11 @@ setInterval(function() {counter--; timer.text(counter);}, 1000);
     // Action, Imeediate, function method
     // Displays "You won" and correct answers.
     // Displays reset button
+
+$("#reset").click(function() {
+    console.log('reset clicked');
+});
+
 // Reset
     // Resets timer
     // Resets scores
