@@ -4,13 +4,19 @@ var question2 = "";
 var question3 = "";
 var question4 = "";
 
-var answer1 = "";
-var answer2 = "";
-var answer3 = "";
-var answer4 = "";
+var answer1 = $("#hand-pan");
+var answer2 = $("#glass-armonica");
+var answer3 = $("#gu-zheng");
+var answer4 = $("#hurdy-gurdy");
+var answer5 = $("#theremin");
+var answer6 = $("#array-mbira");
 
 var questions = (question1, question2, question3, question4);
 var answers = (answer1, answer2, answer3, answer4);
+
+// var correctAnswers = 0;
+// answers.text(correctAnswers++);
+// console.log(correctAnswers);
 
 // var wrong = document.getElementById("wrong")
 // var correct = document.getElementById("correct")
