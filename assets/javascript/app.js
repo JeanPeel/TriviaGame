@@ -6,7 +6,7 @@ var question4 = "";
 
 var answer1 = $("#hand-pan");
 var answer2 = $("#glass-armonica");
-var answer3 = $("#gu-zheng");
+var answer3 = $("#gu-zheng", "#zither");
 var answer4 = $("#hurdy-gurdy");
 var answer5 = $("#theremin");
 var answer6 = $("#array-mbira");
@@ -82,6 +82,12 @@ $("#glass-armonica").click(function() {
 });
 
 $("#gu-zheng").click(function() {
+    wins++;
+    console.log('correct answers clicked ' + wins);
+    correct.text(wins);
+});
+
+$("#zither").click(function() {
     wins++;
     console.log('correct answers clicked ' + wins);
     correct.text(wins);
